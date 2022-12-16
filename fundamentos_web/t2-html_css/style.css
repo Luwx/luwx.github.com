@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav-content {
+  background-color: #001b27;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 span {
+    color: #00AEEA;
+}
+
+.nav-items {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.banner img {
+    width: 100%;
+    height: 360px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: absolute;
+  top: 16%;
+  left: 10%;
+}
+
+.banner-title {
+  font-size: 74px;
+  margin-block-start: 0;
+  margin-block-end: 0px;
+}
+
+.banner-subtitle {
+  margin-block-start: 0;
+  text-align: left;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  background-color: #006299;
+  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  margin: 12px;
+  height: 300px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+button {
+    color: white;
+    background-color: #00AEEA;
+    border: none;
+    padding: 8px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+}
+
+.part1 {
+  flex: 2;
+  margin-right: 64px;
+  height: 300px;
+  flex-flow: wrap;
+}
+
+.part1 img {
+  width: 280px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.part-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.part-content-text {
+  padding-left: 16px;
+}
+
+.part-content-text p {
+  margin-block-start: 0;
+}
+
+.part2 {
+  flex: 1;
+  height: 300px;
+  flex-flow: wrap;
+}
+
+.quotation-box {
+  background-color: #ccecff;
+  padding: 8px 16px;
+}
+
+footer {
+  background-color: #ccecff;
+  padding: 8px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul a {
+  padding: 16px;
+  color: #00558C;
+}
+
+
