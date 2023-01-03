@@ -1,1 +1,87 @@
-{}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #c7d6de;
+}
+
+.movie-card {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  text-align: center;
+  margin-block-start: 0;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: 600px 600px;
+}
+
+.poster-img {
+  width: 200px;
+  padding-right: 16px;
+}
+
+
+.elenco-section {
+    padding-top: 10px;
+}
+
+
+.elenco-title {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.card-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.resumo {
+
+}
+
+.classificacao {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+}
+
+.i18 {
+    background-color: black;
+}
+
+.i16 {
+    background-color: red;
+}
+
+.i14 {
+    background-color: darkorange;
+}
+
+.i12 {
+    background-color: orange;
+}
+
+.i10 {
+    background-color: lightseagreen;
+}
+
+.ilivre {
+    background-color: green;
+}

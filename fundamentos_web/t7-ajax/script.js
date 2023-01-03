@@ -8,7 +8,23 @@ const criaItems = lista => {
     return items;
 }
 
-const gerarClassificacao = idade => { }
+const gerarClassificacao = idade => {
+    console.log(idade);
+    switch (idade) {
+        case 18:
+            return `<div class="classificacao i18">18</div>`;
+        case 16:
+            return `<div class="classificacao i16">16</div>`;
+        case 14:
+            return `<div class="classificacao i14">14</div>`;
+        case 12:
+            return `<div class="classificacao i12">12</div>`;
+        case 10:
+            return `<div class="classificacao i10">10</div>`;
+        case 0:
+            return `<div class="classificacao ilivre">livre</div>`;
+    }
+}
 
 const gerarRating = opinioes => { }
 
@@ -17,14 +33,14 @@ const gerarGeneros = filme => {
     return filme.generos.forEach
 }
 
-const gerarLista = filme => {
+const gerarLista = (filmeLista, filme) => {
     return `
     <div class="movie-card">
             <div class="card-header">
-                <img src="${filme.figura}" alt="Poster">
+                <div class="poster"><img class="poster-img" src="${filme.figura}" alt="Poster"></div>
                 <div class="card-header-content">
                     <h2 class="title">${filme.titulo}</h2>
-                    <span class="categories">${filme.generos.join(' ')}</span>
+                    <span class="categories">${filme.generos.join(', ')}</span>
                     <div class="elenco-section">
                         <span class="elenco-title">Elenco</span>
                         <span>${filme.elenco.join(', ')}</span>
@@ -35,7 +51,7 @@ const gerarLista = filme => {
                     <div class="rating">${gerarRating(filme.opinioes)}</div>
                 </div>
             </div>
-            <p>${filme.resumo}</p>
+            <p class="resumo">${filme.resumo}</p>
             <div class="card-footer">
                 <h3>Títulos similares</h3>
                 <div class="images">
@@ -50,7 +66,7 @@ const carregarFilmes = (receitaLista, seletorCatalogo) => {
     const divCatalogo = document.querySelector(seletorCatalogo)
 
     receitaLista.forEach(receita => {
-        divCatalogo.innerHTML += gerarLista(receita);
+        divCatalogo.innerHTML += gerarLista(receitaLista, receita);
 
     });
 }
