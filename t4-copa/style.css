@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #045694;
+  color: #fff;
+  padding: 20px;
+}
+
+.site-title h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Style the navigation menu */
+nav {
+  overflow: hidden;
+  background-color: #045694;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav #mobileMenuItems {
+  display: none;
+}
+
+/* Style navigation menu links */
+nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+  display: none;
+}
+
+/* Add a grey background color on mouse-over */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.banner {
+  text-align: center;
+  background-image: url(../imgs/copa-catar4.webp);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.banner h1 {
+  color: white;
+}
+
+main {
+  background-color: #eeeeee;
+}
+
+.section-title {
+  color: #045694;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  margin-block-end: 0.25em;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  color: gray;
+}
+
+.ver-mais {
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.history-section {
+  /* position: relative; */
+  background-color: black;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.history-title {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.history-div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bg-img {
+  width: 600px;
+  height: 500px;
+  background-image: linear-gradient(
+      to left,
+      transparent 0%,
+      transparent 15%,
+      black 100%
+    ),
+    url(../imgs/trophy.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  background-color: #045694;
+  color: #fff;
+  padding: 20px;
+}
+
+@media screen and (max-width: 660px) {
+  nav ul {
+    display: none;
+  }
+
+  nav a.icon {
+    display: block;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 32px;
+    display: flex;
+  }
+
+  .card-content {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 220px;
+  } 
+}

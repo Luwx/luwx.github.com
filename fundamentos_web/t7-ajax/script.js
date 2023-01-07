@@ -29,7 +29,6 @@ const gerarClassificacao = idade => {
 const gerarRating = opinioes => { }
 
 const gerarGeneros = filme => {
-
     return filme.generos.forEach
 }
 
@@ -37,7 +36,7 @@ const gerarLista = (filmeLista, filme) => {
     return `
     <div class="movie-card">
             <div class="card-header">
-                <div class="poster"><img class="poster-img" src="${filme.figura}" alt="Poster"></div>
+j                <div class="poster"><img class="poster-img" src="${filme.figura}" alt="Poster"></div>
                 <div class="card-header-content">
                     <h2 class="title">${filme.titulo}</h2>
                     <span class="categories">${filme.generos.join(', ')}</span>
@@ -64,7 +63,6 @@ const gerarLista = (filmeLista, filme) => {
 
 const carregarFilmes = (receitaLista, seletorCatalogo) => {
     const divCatalogo = document.querySelector(seletorCatalogo)
-
     receitaLista.forEach(receita => {
         divCatalogo.innerHTML += gerarLista(receitaLista, receita);
 
